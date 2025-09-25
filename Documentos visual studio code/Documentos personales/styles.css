@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #d8d8d8;
+  font-family: Arial, sans-serif;
+}
+
+.seccion{
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+}
+
+div.seccion.show {
+  padding-bottom: 1%;
+  background-color: #d8d8d8;
+  padding-top: 1%;
+    opacity: 1;
+    max-height: 500px;
+}
+
+.casilla {
+  margin-bottom: 1%;
+}
+
+.accordion{
+    background-color: #ffffff;
+    color: #000000;
+    padding:18px;
+    width: 97vw;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+    margin-left: 30px;
+ 
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+ 
+}
+
+.container {
+    padding: 16px;
+    margin: 32px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-shadow: 2px 5px 6px #6e6e6e;
+}
+
+.bg-blanco {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-gris {
+    background-color: rgb(134, 134, 134);
+}
+
+.bg-blanco-gris {
+  background-color:#a2a2a2
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menú de navegación */
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .close-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+}

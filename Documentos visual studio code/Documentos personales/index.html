@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú Hamburguesa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Mi Sitio</div>
+    <button id="menu-toggle" class="menu-toggle">&#9776;</button>
+    <nav id="nav-menu" class="nav-menu open">
+      <button id="close-menu" class="close-btn">&times;</button>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bienvenido</h1>
+
+    <button class="accordion casilla">Introducción</button>
+    <div class="seccion">
+      <section id="intro">
+      <p>El reciclaje es una de las prácticas más importantes para el cuidado del medio ambiente. 
+      Consiste en transformar los residuos en nuevos productos, evitando que se acumulen en basureros 
+      o contaminen los ecosistemas. Adoptar hábitos de reciclaje ayuda a reducir la contaminación, 
+      ahorrar energía y preservar los recursos naturales.</p>
+      </section>
+    </div>
+      
+    <button class="accordion casilla" >Temas</button>
+    <div id="temas" class="seccion">
+      <p>
+        <ol>
+          <li>Reducción de residuos: al separar y reciclar materiales como papel, plástico, vidrio y metal, 
+            disminuye la cantidad de basura que llega a los vertederos.</li>
+          <li>Ahorro de recursos naturales: reciclar papel evita la tala excesiva de árboles, mientras que 
+            el reciclaje de metales reduce la necesidad de explotar minas.</li>
+          <li>Beneficios económicos: las industrias que reutilizan materiales ahorran en costos de producción 
+            y generan nuevas oportunidades de empleo.</li>
+          <li>Conciencia ciudadana: fomentar la cultura del reciclaje en escuelas y hogares ayuda a crear 
+            comunidades más responsables con el medio ambiente.</li>
+        </ol>
+      </p>
+    </div>
+    
+    <button class="accordion casilla">Conclusión</button>
+    <div id="conclusion" class="seccion">
+      <p>El reciclaje no es solo una acción individual, sino una responsabilidad colectiva. 
+        Cada pequeño esfuerzo suma: desde separar la basura en casa hasta apoyar iniciativas sostenibles en la comunidad. 
+        Si todos adoptamos este hábito, podremos asegurar un planeta más limpio y saludable para las generaciones futuras.</p>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
