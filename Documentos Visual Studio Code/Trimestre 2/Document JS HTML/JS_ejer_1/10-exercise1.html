@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang= "es">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="tools/indice.js"></script>
+        <script>var current_class="exercicio1";</script>
+        <script src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Ejercicios # 1</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body>
+
+       <div class="page-container">
+           <header>
+
+           </header>
+
+           <main>
+               <h3>Lista de Ejercicios # 1</h3>
+               <br>
+               
+                <p>
+                    1) En la carpeta /js, crea un nuevo archivo .js y nómbralo 'ex1.js'. Haz el enlace a este archivo 
+                    al final de esta página HTML. Envía el siguiente mensaje a la consola: "Esto es ex1.js". 
+                </p>
+
+                <small>* Usa este archivo para resolver el resto de los ejercicios de abajo.</small>
+                
+                <br><br>
+                
+                <p>
+                    2) Crea variables para guardar tu nombre, apellido y año de nacimiento. En el cuadro azul de abajo, 
+                    coloca el siguiente texto: "Hola, mi nombre es _____________,
+                    tengo _____ años y estoy aprendiendo Javascript". 
+                </p>
+
+                <div class="caixa_outer blueborder">
+
+              <div id="student_message" onclick="cambiardatos()">
+                  Este elemento tiene id="student_message". Muestra tu mensaje aquí.
+              </div>
+                </div>
+
+                <small>* Usa el año actual para calcular tu edad.</small>
+
+                <br><br>
+
+                <p>
+                    3) Toma los dos números de abajo y calcula el promedio.
+                    
+                </p>
+    
+                <div class="caixa_outer inline">
+    
+                    <div id="num_1">
+                            101
+                    </div>
+                </div>
+    
+                &#xf7;
+    
+                <div class="caixa_outer inline">
+    
+                    <div id="num_2">
+                            7
+                    </div>
+                </div>
+                
+                =
+    
+                <div class="caixa_outer inline">
+    
+            <div id="result" onclick="promedio()">
+                Muestra el resultado con dos decimales
+            </div>
+                </div>
+                
+    
+                <br>
+    
+                <br>
+
+                <p>
+                    4) Supón que los números de teléfono con 9 dígitos son válidos. Todos los demás son inválidos. 
+                    Usa Javascript para probar si los siguientes números son válidos:
+
+                </p>
+
+                <pre>
+                    <code class="javascript">
+
+    var phone1 = "988866552";
+    var phone2 = "99087612366";
+    var phone3 = 876543123;
+    
+                    </code>
+                </pre>
+                
+               
+
+                <br>
+
+                <p>
+                    5) Envía a la consola el resultado de la siguiente operación: 32<sup>6</sup>.
+                    
+                </p>
+
+                <br>
+
+                <p>
+                    6) Considera los siguientes nombres de variables e indica cuáles son inválidos y por qué:
+
+                    <ul>
+                        <p>a) var NAME; Es valido porque solo contiene letras, y las mayusculas estan permitidas.</p>
+                        <p>b) var $num1; Es valido porque pueden comenzar con $ e incluir numeros si no estan al inicio.</p>
+                        <p>c) var typeof; Es invalido porque es una palabra de JavaScript usada como operador.</p>
+                        <p>d) var first-name; Es invalido porque JavaScript interpreta el guion medio como el operador de resta.</p>
+                        <p>e) var attempt_2; Es valido porque contiene letras, numeros y un guion bajo que estan permitidos.</p>
+                        <p>f) var 2ndAttempt; Es invalido porque no puede comenzar con un numero.</p>
+                        <p>g) var full name; Es invalido porque las variables no pueden tener espacios.</p>
+                    </ul>
+                    
+                </p>
+
+                <br>
+
+                <p>
+                    7) Considera el bloque de código de abajo y adivina qué valores se mostrarán en la consola.
+                </p>
+
+                <pre>
+                    <code class="javascript">
+
+    var quantity = "25";
+    var number = 6;
+    var pressure;
+    var temperature = null;
+
+    console.log(quantity += quantity); = 2525
+    console.log( (7+5) / number + 2 ); 4
+    console.log(pressure); undefined
+    console.log(temperature); null
+    console.log(typeof pressure); undefined
+    console.log(typeof temperature); object
+
+                    
+                    </code>
+                </pre>
+
+                <br>
+
+                <p>
+                    8) Realiza las transformaciones a las siguientes URLs:
+                </p>
+
+                <div class="caixa_outer inline">
+                    <div id="url_1">
+                            www.davidxi.com
+                    </div>
+                </div>
+
+                <div class="caixa_outer inline">
+            <div id="url_2" onclick="ponerHTTPS()">
+                muestra la url con https:// aquí
+            </div>
+                </div>
+
+                <br>
+
+                <div class="caixa_outer inline">
+                    <div id="url_3">
+                            https://www.google.com
+                    </div>
+                </div>
+
+                <div class="caixa_outer inline">
+            <div id="url_4" onclick="quitarHTTPS()">
+                muestra la url sin https:// aquí
+            </div>
+                </div>
+                    
+
+                <div id="bottom-area">
+                    <div class="prev-next-link">
+                        <div class="link-aula" id="prev_class">
+                            
+                        </div>
+                        <div class="link-aula" id="next_class">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="classes">
+                        <h3>
+                            Contenidos
+                        </h3>
+                        <ul id="class_index">
+                        </ul>
+                    </div>
+                </div>
+
+           </main>
+
+        </div>
+        <script src="ex1.js"></script>
+    </body>
+
+</html>
