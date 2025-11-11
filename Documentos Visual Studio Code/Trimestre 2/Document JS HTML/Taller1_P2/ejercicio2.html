@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ejercicio 2 - Área triángulo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="ejercicio2">
+  <div class="container">
+    <h1>Ejercicio 2</h1>
+    <p class="descripcion">Calcula el área de un triángulo (area = (base * altura) / 2). Ingresa base y altura y muestra el resultado.</p>
+
+    <p>Ingresa la base y la altura:</p>
+    <input type="text" id="base" placeholder="Base" />
+    <input type="text" id="altura" placeholder="Altura" />
+
+    <div class="botones-operaciones">
+      <button onclick="areaTriangulo()">Calcular área</button>
+    </div>
+
+    <h2>Resultado:</h2>
+    <p id="resultado2">—</p>
+
+    <a class="home-btn" href="index.html">🏠 Volver al inicio</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

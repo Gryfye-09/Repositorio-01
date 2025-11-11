@@ -1,0 +1,121 @@
+/* Estilos compartidos para todas las páginas */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; font-family: Arial, sans-serif; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* contenedor principal */
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 32px;
+  border-radius: 14px;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+/* encabezados y textos */
+h1 { font-size: 1.9rem; margin-bottom: 8px; color: #222; }
+.intro { margin-bottom: 18px; color: #333; }
+.descripcion {
+  margin: 8px auto 18px;
+  max-width: 640px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  background-color: rgba(240,240,240,0.6);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* menú de la página principal */
+.menu-botones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background-color: #0078d7;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .18s ease, background-color .18s ease;
+}
+.nav-btn:hover { background-color: #005fa3; transform: translateY(-3px); }
+
+/* inputs */
+input[type="text"] {
+  width: 46%;
+  max-width: 300px;
+  padding: 10px 12px;
+  margin: 8px 6px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+/* botones de operaciones */
+.botones-operaciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.botones-operaciones button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0b84ff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.botones-operaciones button:hover { background-color: #0666b3; transform: translateY(-2px); }
+
+/* resultado */
+h2 { margin-top: 20px; font-size: 1.1rem; color: #222; }
+[id^="resultado"] {
+  display: inline-block;
+  min-width: 260px;
+  padding: 10px 12px;
+  margin-top: 10px;
+  background-color: #f3f5f7;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* botón de volver */
+.home-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+}
+.home-btn:hover { background-color: #1e7e34; }
+
+/* fondos diferentes por página */
+body.pag_principal { background: linear-gradient(135deg, #c45ec9, #dc97d4); }
+body.ejercicio1 { background: linear-gradient(120deg, #a1c4fd, #c2e9fb); }
+body.ejercicio2 { background: linear-gradient(120deg, #ffecd2, #fcb69f); }
+body.ejercicio3 { background: linear-gradient(120deg, #f6d365, #fda085); }
+body.ejercicio4 { background: linear-gradient(120deg, #84fab0, #8fd3f4); }
