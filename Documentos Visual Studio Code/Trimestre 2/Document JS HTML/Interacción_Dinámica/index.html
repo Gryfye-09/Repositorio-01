@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Super Mario Interactive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateAll('mario_pequeñoFondo.png','Mario Bros',40,0,45)">
+  <div class="card">
+    <div class="title" id="titleArea">Mario Bros</div>
+    <div class="stage">
+      <img id="mainImg" src="mario_pequeñoFondo.png" alt="Mario">
+      <div class="buttons">
+        <img src="hongoFondo.png" alt="Hongo" onclick="updateAll('mario_hongoFondo.png','Super Mario Bros',60,50,60)">
+        <img src="fuegoFondo.png" alt="Flor" onclick="updateAll('mario_fuegoFondo.png','Super Mario Bros Fuego',75,90,70)">
+        <img src="colaFondo.png" alt="Cola de mapache" onclick="updateAll('mario_mapacheFondo.png','Super Mario Bros Mapache',85,85,100)">
+        <img src="estrellaFondo.png" alt="Estrella" onclick="updateAll('mario_starFondo.png','Super Mario Bros Star',100,100,80)">
+      </div>
+
+      <div class="bars">
+        <div class="barRow">
+          <div class="barLabel">Vida</div>
+          <div class="bar"><div id="lifeFill" class="fill"></div></div>
+          <div id="lifeNum" class="num">40/100</div>
+        </div>
+        <div class="barRow">
+          <div class="barLabel">Defensa</div>
+          <div class="bar"><div id="defFill" class="fill defFill"></div></div>
+          <div id="defNum" class="num">0/100</div>
+        </div>
+        <div class="barRow">
+          <div class="barLabel">Poder salto</div>
+          <div class="bar"><div id="jumpFill" class="fill jumpFill"></div></div>
+          <div id="jumpNum" class="num">45/100</div>
+        </div>
+      </div>
+    </div>
+    <footer>Haz clic en las imágenes para cambiar el estado de Mario.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
