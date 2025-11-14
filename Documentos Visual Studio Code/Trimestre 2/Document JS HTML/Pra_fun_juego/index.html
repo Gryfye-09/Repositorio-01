@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vanellope vs King Candy - Mini Juego (Iconos)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-container">
+    <div class="background"></div>
+
+    <main class="stage">
+      <!-- Fila de personajes: jugador a la izquierda, enemigo a la derecha -->
+      <div class="characters-row">
+        <div class="character-card">
+          <img id="playerImage" src="Vanellope.gif" alt="Vanellope" />
+          <div class="hp-area small">
+            <label>Vida Vanellope</label>
+            <progress id="hpBarPlayer" value="100" max="100"></progress>
+            <div id="hpTextPlayer" class="hp-text">100 / 100</div>
+          </div>
+        </div>
+
+        <div class="character-card enemy">
+          <img id="enemyImage" src="kingCandy.gif" alt="King Candy" />
+          <div class="hp-area small">
+            <label>Vida King Candy</label>
+            <progress id="hpBarEnemy" value="120" max="120"></progress>
+            <div id="hpTextEnemy" class="hp-text">120 / 120</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles: ahora son IMÁGENES (iconos) que actúan como botones -->
+      <section class="controls">
+        <div class="attacks">
+          <!-- Los iconos son elementos diferentes a las imágenes de los personajes,
+               así que al hacer click los GIFs de los personajes no se reemplazan. -->
+          <img class="control-icon" src="Martillo.gif" alt="Martillo" title="Martillo de Félix" onclick="attack('hammer')" />
+          <img class="control-icon" src="Ralph.gif" alt="Puños" title="Puños de Ralph" onclick="attack('fists')" />
+          <img class="control-icon" src="Policias.gif" alt="Oficial" title="Oficial de la estación" onclick="attack('cop')" />
+        </div>
+
+        <div class="heals">
+          <img class="control-icon heal" src="Caramelos.gif" alt="Caramelo" title="Dulce Caramelo" onclick="heal('caramel')" />
+          <img class="control-icon heal" src="Chocolates.gif" alt="Choco" title="Dulce Choco" onclick="heal('choco')" />
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
